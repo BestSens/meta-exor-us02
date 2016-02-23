@@ -1,4 +1,4 @@
-FILESEXTRAPATHS := "${THISDIR}/${PN}-${KERNEL_VERSION}"
+FILESEXTRAPATHS_prepend := "${THISDIR}/${PN}-${KERNEL_VERSION}:"
 
 SRC_URI = "git://github.com/ExorEmbedded/linux-us02.git;protocol=git;branch=4.1-LTS"
 SRC_URI[md5sum] = "7094df7dedb134fa41ee6679a34de190"
