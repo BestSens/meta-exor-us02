@@ -3,17 +3,17 @@ LICENSE = "Proprietary"
 
 LIC_FILES_CHKSUM = "file://LICENSE.txt;md5=ce29dbb849109f28c0a0358e8fedbc64"
 
-PR = "r443"
+PR = "r152"
 
 SRC_URI = "\
-	https://copy.com/JNh9V08fl4AH17h4/us02-public/jmobile1.92_portable_alterakit_cds3.tar.gz?download=1;protocol=http \
+	https://copy.com/JNh9V08fl4AH17h4/us02-public/jmobile2.01_portable_alterakit_cds3.tar.gz?download=1;protocol=http \
         file://jmobile.desktop \
 "
-SRCREV = "r8"
+SRCREV = "r1"
 BB_STRICT_CHECKSUM = ""
 
 do_configure() {
-	mv ${WORKDIR}/jmobile1.92_portable_alterakit_cds3.tar.gz?download=1 ${WORKDIR}/jmobile_alterakit.tar.gz
+	cp ${WORKDIR}/jmobile2.01_portable_alterakit_cds3.tar.gz?download=1 ${WORKDIR}/jmobile_alterakit.tar.gz
 	tar xzf ${WORKDIR}/jmobile_alterakit.tar.gz portable/LICENSE.txt --strip 1 -C ${S}
 }
 

@@ -1,6 +1,6 @@
 [Desktop Entry]
-Version=1.92
-Name=JMobile
+Version=2.1
+Name=JMobile 2.1
 # Only KDE 4 seems to use GenericName, so we reuse the KDE strings.
 # From Ubuntu's language-pack-kde-XX-base packages, version 9.04-20090413.
 GenericName=HMI
