@@ -21,5 +21,5 @@ INSANE_SKIP_linux += "installed-vs-shipped"
 
 KERNEL_DEVICETREE = "socfpga_cyclone5_exor.dtb"
 
-KERNEL_VERSION = "4.1"
+KERNEL_VERSION = "4.1.0-rt15-yocto-standard"
 
