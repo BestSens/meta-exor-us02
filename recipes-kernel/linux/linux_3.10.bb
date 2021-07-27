@@ -33,8 +33,8 @@ do_deploy_append() {
    done
 
    cd "${DEPLOYDIR}"
-   mv ${KERNEL_DEVICETREE} socfpga.dtb
-   tar czvf "us02-kernel.tar.gz" "${KERNEL_IMAGETYPE}" socfpga.dtb
+   mv socfpga_bemos_usom.dtb socfpga.dtb
+   tar czvf "us02-kernel.tar.gz" "${KERNEL_IMAGETYPE}" socfpga.dtb socfpga_bemos_v8.dtb
 
    rm -rf  ${KERNEL_IMAGETYPE}*
    rm -rf *.dtb
