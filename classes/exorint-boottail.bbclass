@@ -37,7 +37,7 @@ python do_boot_tail () {
             chr(0),
             chr(today.day),
             chr(today.month),
-            chr(today.year-2000),
+            chr(today.year-2020),
             version,
             0
         )
